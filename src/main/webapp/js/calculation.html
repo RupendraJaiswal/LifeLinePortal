@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Calculation</title>
+<script >
+ function squareRoot() {
+	// alert("in function");
+	 var number= document.getElementById("txtnumber").value
+	 var sq=Math.sqrt(number);
+	// alert("Square Root of "+number + " is "+sq);
+	//document.write("Square Root of "+number + " is "+sq);
+	//document.getElementById("output_message").innerText="Square Root of "+number + " is "+sq;
+	document.getElementById("output_message").innerHTML="<i>Square Root of </i>"+number + " <i> is </i>"+sq;
+}
+ function power() {
+	 var number= document.getElementById("txtnumber").value
+	 var pw=Math.pow(number,number);
+	 //alert("Power of "+number + " is "+pw);
+	 document.getElementById("output_message").innerHTML="<i>Power of</i> "+number + "<i> is </i> "+pw
+	
+}
+	 //alert("in function");
+	
+
+</script>
+</head>
+<body>
+<div>
+<lable for="Number " id="number" id="number">Number</lable>
+  <input type="number" name=" txtnumber" id="txtnumber"  required="required" placeholder="Enter Number" style="margin-bottom: 15px"></input>
+ 
+</div>
+<button type="button" onclick="squareRoot()">SquarRoot</button>
+<button  type="button"  onclick="power()">Power</button>
+   <h3 id="output_message"></h3>
+</body>
+</html>

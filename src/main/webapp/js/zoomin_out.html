@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Zoom In Zoom Out</title>
+<script >
+function zoomout() {
+	var im=document.getElementById("img1");
+	im.style.width="200px"
+		im.style.height="300px"
+	
+}
+function zoomin() {
+	var im=document.getElementById("img1");
+	im.style.width="400px"
+    im.style.height="400px"
+	
+}
+	
+
+</script>
+</head>
+<body  >
+<img  id="img1" src="/LifeLinePortal/images/i1.jpg" style="width:200px;height: 300px; margin-left:30px" onmouseover="zoomin() " onmouseout="zoomout()">
+</body>
+</html>

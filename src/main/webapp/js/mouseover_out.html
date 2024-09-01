@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script >
+function changeimage()
+{
+	var im=document.getElementById("img1");
+	//console.log(im);// it print entire tag (img tag))
+	im.src="/LifeLinePortal/images/b6.jpg"
+	}
+function rechangeimage()
+{
+	var im=document.getElementById("img1");
+	//console.log(im);// it print entire tag (img tag))
+	im.src="/LifeLinePortal/images/bloodicon.png"
+	}
+	
+
+</script>
+</head>
+<body  >
+<img  id="img1" src="/LifeLinePortal/images/bloodicon.png" style="width:200px;height: 300px; margin-left:30px" onmouseover="changeimage()  " onmouseout="rechangeimage()">
+</body>
+</html>

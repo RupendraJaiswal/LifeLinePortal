@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<script >
+function validate() {
+	
+	var status=true
+	var userId=document.getElementById("txtuserid").value;
+	var userpass=document.getElementById("txtuserpass").value;
+	if(userId.length==0)
+		{
+		document.getElementById("msguserid").innerText="Please provide UserId"
+		status=false
+		}
+	if(userpass.length==0)
+	{
+	document.getElementById("msguserpass").innerText="Please provide password"
+	status=false
+	}
+
+	return status
+}
+</script>
+</head>
+<body>
+<form onsubmit="return validate()">
+<div>
+
+<lable  for="Id"  >UserID
+</lable>
+<input type="text" id="txtuserid" name="txtuserid" placeholder="Enter user id"></input>
+<span id="msguserid" style="font-size: 15px;color: red"></span>
+<br>
+<br>
+<lable  for="Pass" >Password
+</lable>
+<input type="password" id="txtuserpass" name="txtuserpass" placeholder="Enter password"></input>
+<span id="msguserpass" style="font-size: 15px;color: red"></span>
+<br><br>
+<button type="submit"> submit</button>
+
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+function showhospital() {
+	
+
+var hospitaldiv=document.getElementById("divhos");
+
+
+hospitaldiv.style.display="block"//means show
+	var bankdiv=document.getElementById("divbank");
+	if(bankdiv.style.display=="block")
+		{
+		bankdiv.style.display="none";//hide it
+		}
+
+}
+function showbank() {
+	
+
+	var bankdiv=document.getElementById("divbank");
+	
+	bankdiv.style.display="block"//means show
+		var hospitaldiv=document.getElementById("divhos");
+		if(hospitaldiv.style.display=="block")
+		{
+				hospitaldiv.style.display="none";//hide it
+		}
+
+	}
+</script>
+</head>
+<body>
+<div style="width:302px;height:auto ;background-color:cyan; display: none"  id="divhos">
+
+<h1 style="text-align: center; color: black;">These are Hospitals are available</h1>
+	<table border="2" class=table>
+
+		<thead >
+			<tr>
+				<th>HospitalName</th>
+				<th>Address</th>
+				<th>Contact</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Pristyn Care 
+</td>
+				<td>B -4/216 Vishal Khand 4 Gomti Nagar , Lucknow -</td>
+				<td>9796589565</td>
+				
+			</tr>
+			<tr>
+				<td>Pristyn Care
+</td>
+				<td>Sarfaraj Ganj, Musabag, Picnic Spot-Hardoi Road, Lucknow, Uttar Pradesh - 226003,India</td>
+					<td>9796589552</td>
+				
+			</tr>
+			<tr>
+				<td>Shekhar Hospital </td>
+				<td>B Block, Church Road, Indira Nagar, Lucknow, Lucknow, Uttar Pradesh - 226016,India</td>
+					<td>9796595123</td>
+			</tr>
+		
+	</table>
+
+</div>
+
+
+<div style="width:302px;height:auto ;background-color:cyan ; display: none"  id="divbank">
+<h1 style="text-align: center; color: black;">These Blood Banks are available</h1>
+	<table border="2" class=table>
+
+		<thead >
+			<tr>
+				<th>Blood Bank Name</th>
+				<th>Address</th>
+					<th>Contact</th>
+				
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Kohli Blood Bank And Components Private Limited</td>
+				<td>1 2nd Floor, A-Block, Kanchan Market, Chowk, Lucknow, Uttar Pradesh - 226003,India</td>
+						<td>9796589563</td>
+			</tr>
+			<tr>
+				<td>Eras Medical College And Hospital Blood Bank</td>
+				<td>Sarfaraj Ganj, Musabag, Picnic Spot-Hardoi Road, Lucknow, Uttar Pradesh - 226003,India</td>
+						<td>9796589789</td>
+			</tr>
+			<tr>
+				<td>Shekhar Hospital Private Limited Blood Bank</td>
+				<td>B Block, Church Road, Indira Nagar, Lucknow, Lucknow, Uttar Pradesh - 226016,India</td>
+						<td>9796589523</td>
+			</tr>
+		
+
+		</tbody>
+
+	</table>
+
+</div>
+<button style ="margin-top: 5px" type="button" onclick="showhospital()" >  Hospital</button>
+<button   style ="margin-top: 5px" type="button" onclick="showbank()" type="button"> Blood Bank</button>
+</body>
+</html>

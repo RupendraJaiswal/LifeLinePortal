@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Animation Page</title>
+
+<script >
+const imageArray=["b2.jpg","b3.jpg","b4.jpg","b6.jpg"]
+const colorArray=["red","black","pink","green"]
+var index=0;
+function changeImage() {
+	document.getElementById("img1").src="/LifeLinePortal/images/"+imageArray[index]
+	document.getElementById("name").style.color=colorArray[index]
+	index++
+	if(index>3)
+		index=0
+		
+	setTimeout("changeImage()",1000)
+
+	
+}
+
+</script>
+</head>
+<body onload="changeImage()">
+<img src="/LifeLinePortal/images/calb.jpg" style="width: 400px;height: 400px" id="img1">
+<h1 id="name">Rupendra Jaiswal </h1>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+@charset "ISO-8859-1";
+body.bg{
+	background-image: Linear-gradient(to right ,red,white);
+}
+body.bg1{
+background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+}
+a:link {
+	color: white;
+	
+}
+a:visited {
+	color:black;
+	
+}
+a:hover {
+	color:yellow;
+	text-decoration: underline;
+	
+}
+a:active {
+	color:green;
+}
+a {
+	text-decoration: none;
+}
